@@ -5,7 +5,36 @@ body{
 *{
     box-sizing: border-box;
 }
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 main{
     height: 100vh;
     background-color: rgba(36, 21, 69, 0.784);
+}
+
+aside.boxes{
+    width:688px;
+    gap: 32px;
+    justify-content: space-between;
+}
+p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 5.92px;
+    text-align: center;
+    color: #8385A9;
+}
+div{
+    background-color:  rgba(56, 40, 91, 0.784);
+    color: #FB5E84;
+    width: 148px;
+    height: 145px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: -2.4px;
 }

@@ -12,7 +12,10 @@ body{
 }
 main{
     height: 100vh;
-    background-color: rgba(36, 21, 69, 0.784);
+    background-image:url(./images/danil-aksenov-gWZfmnDoL_E-unsplash.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140%;
 }
 
 aside.boxes{
@@ -22,19 +25,51 @@ aside.boxes{
 }
 p{
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 100%;
     letter-spacing: 5.92px;
     text-align: center;
-    color: #8385A9;
+    color: #e9e7e8;
 }
-div{
-    background-color:  rgba(56, 40, 91, 0.784);
-    color: #FB5E84;
+div.flex{
+    background-color:  rgba(69, 69, 96, 0.812);
+    color: #e9e7e8;
     width: 148px;
     height: 145px;
     border-radius: 8px;
     font-weight: 700;
     font-size: 80px;
     letter-spacing: -2.4px;
+}
+
+.transparent{
+    opacity: 0;
+}
+
+@media screen and (max-width: 692px) {
+    aside.boxes{
+        gap: 15px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    div.flex{
+        width: 100px;
+        height: 96px;
+        font-weight: 600;
+        font-size: 50px;
+    }
+    main.flex{
+        background-size: 400%;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    main{
+        background-size: 230%;
+    }
+}
+@media screen and (max-width: 820px) {
+    main{
+        background-size: 250%;
+    }
 }

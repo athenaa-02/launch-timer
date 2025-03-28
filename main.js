@@ -21,10 +21,32 @@ function timeDecrease(){
         let leftDays = Math.floor(differenceMilliseconds / 86400000)
 
         if(differenceMilliseconds > 0){
-            seconds.textContent = leftSeconds
-            minutes.textContent = leftMinutes
-            hours.textContent = leftHours
+            // seconds
+            if(leftSeconds < 10){
+                seconds.textContent = '0' + leftSeconds
+            }else{
+                seconds.textContent = leftSeconds
+            }
+
+             // minutes
+            if(leftMinutes < 10){
+                minutes.textContent = '0' + leftMinutes
+            }else{
+                minutes.textContent = leftMinutes
+            }
+
+            // hours
+            if(leftHours < 10){
+                hours.textContent = '0' + leftHours
+            }else{
+                hours.textContent = leftHours
+            }
+            
+            // days
             days.textContent = leftDays
+
+
+            
         } else {
             clearInterval(timeInterval)
             seconds.textContent = 0  
